@@ -113,18 +113,20 @@ var getALetter = function() {
 
 //function for what happens when the right letter is guessed
 
+function correctGuess 
+
 //function for what happens when the wrong word is guessed
 
 //reset the game when completed
 
-function gameOver() {
+function (gameOver() {
 
     i = "";
     word = new Word(wordMaker);
     index = guessableWords.wordMaker[i];
     letterGuessed = [];
     guessesLeft = 10;
-};
+});
 
 gameHangman.gameStart();
 
