@@ -25,7 +25,24 @@ var gameHangman = {
 
     //prompts for the user the play the game
 
-    inquirer.prompt
+    inquirer.prompt([(
+
+        name: "start",
+        type: "confirm".
+        message: "Would you like to play a game?"
+
+    )]).then(function(confirm)) {
+
+        if(confirm.begin) {
+
+            gameStart.beginGame();
+        },
+
+        else {
+
+            console.log("Come back some other time!")
+        }
+    }
 
     //check to see if user guessed the word
 
