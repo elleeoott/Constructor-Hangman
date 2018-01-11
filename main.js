@@ -99,6 +99,8 @@ var getALetter = function() {
                 guess = true;
             }
 
+            //Tells the user to try again
+
             else {
 
                 console.log("Guess again!");
@@ -106,4 +108,23 @@ var getALetter = function() {
         }
     }
 }
+
+}
+
+//function for what happens when the right letter is guessed
+
+//function for what happens when the wrong word is guessed
+
+//reset the game when completed
+
+function gameOver() {
+
+    i = "";
+    word = new Word(wordMaker);
+    index = guessableWords.wordMaker[i];
+    letterGuessed = [];
+    guessesLeft = 10;
+};
+
+gameHangman.gameStart();
 

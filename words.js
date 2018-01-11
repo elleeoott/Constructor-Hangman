@@ -10,4 +10,6 @@ function gameWords(word) {
     this.letters = []; 
 }
 
+//Hold the ASCII art for the hangman itself to illustrate progress to user
+
 module.exports = words;
