@@ -113,13 +113,46 @@ var getALetter = function() {
 
 //function for what happens when the right letter is guessed
 
-function correctGuess 
+function correctGuess() {
+
+    //calls game over if the word matches
+
+    //if the word matches the word in the array
+
+    //start game over function
+
+    //increase the win count by 1
+
+    //prompt user to play again
+
+    inquirer.prompt([{
+
+        name: "playAgain",
+        message: "Would you like to play again?",
+        type: "input"
+
+    }])
+
+    if (input === Yes) {
+
+        return true;
+
+    }
+    
+    else {
+
+        return false;
+    }
+
+    gameOver();
+
+}
 
 //function for what happens when the wrong word is guessed
 
 //reset the game when completed
 
-function (gameOver() {
+function gameOver() {
 
     i = "";
     word = new Word(wordMaker);
