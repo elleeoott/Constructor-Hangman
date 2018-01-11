@@ -197,5 +197,7 @@ function gameOver() {
     guessesLeft = 10;
 });
 
+//runs the game
+
 gameHangman.gameStart();
 
