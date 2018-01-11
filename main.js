@@ -63,14 +63,14 @@ beginGame.gameStart = function() {
 
 //resets the guess count
 
-var resetGuess = function() {
+function resetGuess() {
 
     this.guessesLeft = 10
-}
+};
 
 //tells the user to choose a letter
 
-var getALetter = function() {
+function getALetter() {
 
     inquirer.prompt([{
 
