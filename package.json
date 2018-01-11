@@ -1,0 +1,24 @@
+{
+  "name": "constructor-hangman",
+  "version": "1.0.0",
+  "description": "Hangman run entirely through node",
+  "main": "main.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "Testing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edarst/Constructor-Hangman.git"
+  },
+  "author": "Evan Darst, 2018",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edarst/Constructor-Hangman/issues"
+  },
+  "homepage": "https://github.com/edarst/Constructor-Hangman#readme"
+}
