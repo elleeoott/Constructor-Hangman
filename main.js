@@ -150,7 +150,12 @@ function correctGuess() {
 
 //function for what happens when the wrong word is guessed
 
+function wrongWord() {
+
+
     //increase losses by 1
+
+    losses += 1;
 
     //ask the user to play again
 
@@ -174,6 +179,8 @@ function correctGuess() {
     }
 
     gameOver();
+
+};
 
 //reset the game when completed
 
