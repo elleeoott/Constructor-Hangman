@@ -2,3 +2,11 @@
 
 var inquirer = require("inquirer");
 var app = require("./app.js");
+var words = require("./words.js");
+
+var gameHangman = {
+
+
+}
+
+gameHangman();
