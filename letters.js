@@ -16,6 +16,11 @@ var gameLetters = function(letter) {
             this.show = true;
 
         }
+
+        else {
+
+            this.show = false;
+        }
     }
 
 }
