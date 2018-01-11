@@ -10,47 +10,48 @@ var gameHangman = {
 
     //array holds the letters guessed by the user
 
-    guessesLeft: 10;
-    guessedLetters: [];
+    guessesLeft: 10,
+    guessedLetters: [],
     gameStart: function() {
 
         //makes sure that guessedLetters is cleared before a new game
 
-        if(this.guessedLetters.length > 0) {
+        if (this.guessedLetters.length > 0) {
 
             this.guessedLetters = [];
         }
 
     }
 
-    //prompts for the user the play the game
+    //prompts for the user the play the game (not sure where the syntax error is coming from here).
 
     inquirer.prompt([(
 
         name: "start",
-        type: "confirm".
+        type: confirm,
         message: "Would you like to play a game?"
 
-    )]).then(function(confirm)) {
+    )]).then(function(confirm) {
 
         if(confirm.begin) {
 
             gameStart.beginGame();
-        },
+        }
 
         else {
 
-            console.log("Come back some other time!")
+            console.log("Come back some other time!");
         }
     }
 
-    //check to see if user guessed the word
+
+//if confirmed, starts a new game
+
+beginGame.gameStart = function() {
 
 
 }
 
 
 
-//if confirmed, starts a new game
 
-gameHangman();
