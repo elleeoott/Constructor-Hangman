@@ -5,6 +5,10 @@ var app = require("./app.js");
 var words = require("./words.js");
 var isLetter = require("is-letter");
 
+//bring in our word index
+
+var index = gameWords.indexOf[i];
+
 //variable holds our game initialization
 var gameHangman = {
 
