@@ -49,9 +49,61 @@ var gameHangman = {
 
 beginGame.gameStart = function() {
 
+    //if the guesses remaining is equal to 10
 
+    if(this.guessesLeft === 10) {
+
+        console.log("--------------")
+        console.log("Let's begin.")
+        console.log("--------------")
+
+    }
+
+},
+
+//resets the guess count
+
+var resetGuess = function() {
+
+    this.guessesLeft = 10
 }
 
+//tells the user to choose a letter
 
+var getALetter = function() {
 
+    inquirer.prompt([{
+
+        name: "letterPicked",
+        type: input,
+        message: "Choose one letter: "
+
+        //Makes sure that it is a letter
+
+        if(isLetter(value)) {
+
+            return: true;
+        } 
+        
+        else {
+
+            return: false;
+        }
+    }]).then(function(letter)) {
+
+        //Loops through our words to see if it's there
+        for(var i = 0; i < guessedLetters.length; i++){
+
+            if(letterGuessed === guessedLetters[i]){
+
+                guess = true;
+            }
+
+            else {
+
+                console.log("Guess again!");
+            }
+        }
+    }
+}
 
