@@ -150,6 +150,31 @@ function correctGuess() {
 
 //function for what happens when the wrong word is guessed
 
+    //increase losses by 1
+
+    //ask the user to play again
+
+    inquirer.prompt([{
+
+        name: "playAgain",
+        message: "Would you like to play again?",
+        type: "input"
+
+    }])
+
+    if (input === Yes) {
+
+        return true;
+
+    }
+    
+    else {
+
+        return false;
+    }
+
+    gameOver();
+
 //reset the game when completed
 
 function gameOver() {
